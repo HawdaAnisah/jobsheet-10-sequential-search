@@ -1,0 +1,41 @@
+package praktikum;
+import java.util.Scanner;
+public class praktikum4 {
+    public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+        int a,b,c,z,y;
+        a=0;
+        b=0;
+        c=0;
+        z=0;
+        y=0;
+        String ag,ml = new String();
+        System.out.println("masukkan kalimat atau kata kata :");
+        ml = scan.nextLine();
+        char charr[]= new char[ml.length()];
+        ag = ml.toLowerCase();
+        for (int x = 0; x < ml.length(); x++) {
+            if(ag.charAt(x)== 'a'){
+                a++;
+            }
+            if(ag.charAt(x) == 'i'){
+                b++;
+        } 
+            if (ag.charAt(x)== 'u'){
+                c++;
+            }
+            if (ag.charAt(x)== 'e'){
+                z++;
+            }
+            if(ag.charAt(x)== 'o'){
+                y++;
+            }
+        }
+        System.out.println("a = " +a);
+        System.out.println("i = " +b);
+        System.out.println("u = " +c);
+        System.out.println("e = " +z);
+        System.out.println("o = " +y);
+        System.out.println("total = " +(a+b+c+z+y));
+    }
+}
