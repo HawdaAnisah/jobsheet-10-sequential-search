@@ -1,0 +1,24 @@
+package praktikum;
+
+import java.awt.BorderLayout;
+import java.util.Scanner;
+public class LatihanPraktikum1 {
+    public static void main(String [] args){
+        String dicari;
+        boolean ditemukan = false;
+        String[] mobil = new String[]{"xenia","avanza","mobilio","brio"};
+        Scanner in = new Scanner(System.in);
+        dicari = in.nextLine();
+        for(String mobil1 : mobil){
+            if (dicari.equals(mobil1)){
+                ditemukan = true;
+                break;
+            }
+        }
+        if (ditemukan == true){
+            System.out.println("mobil ada!");
+        } else {
+            System.out.println("mobil tidak ditemukan");
+        }
+    }
+}
